@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@500&family=Roboto+Serif:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$font-Koulen: 'Koulen', cursive;
+$font-Oswald: 'Oswald', sans-serif;
+$font-Robotoo: 'Roboto', sans-serif;
+
+$color-soft-Orange:#FFD0AD;
+$color-strong-Orange:#FF9649;
+$color-Yellow:#FFCF23;
+$color-background:#FFFF;
+
+nav{
+    margin-top: -1rem;
+    display: flex;
+    justify-content: space-between;
+    #cont-logo{
+        display: flex;
+        align-items: center;
+
+        img{
+                width: 1.5rem;
+                height: 2.5rem;
+                margin-left: .5rem;
+        }
+        
+        h1{
+            margin-left: .2rem;
+            font-size: 1.5rem;
+            font-family: $font-Koulen;
+            
+        }
+    }
+   
+        #ubicacion{
+            margin-left: .2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 2rem;
+                height: 1.5rem;
+            }
+            h3{
+                font-family: $font-Robotoo;
+                font-size: .6rem;
+            }
+        }
+
+        #nav-searchbar{
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            width: 60%;
+            #categorias{
+                
+                background-color: $color-soft-Orange;
+                width: 10rem;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    margin-right:.3rem ;
+                    font-family: $font-Robotoo;
+                    font-size: .8rem;
+                }
+                img{
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+            #searchbar{
+                margin-left: .5rem;
+               width: 100%;
+                height: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: 2px solid black;
+                input{
+                    border: 0;
+                    outline: 0;
+                    width: 90%;
+                    
+                }
+                img{
+                    width: 2rem;
+                    height: 1.5rem;
+                    margin-right: .2rem;
+                }
+            }
+            
+        }
+        #btn-inicio-registrar{
+            
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            button{
+                margin-left: 1rem;
+                width: 8rem;
+                height: 2.2rem;
+                border:none;
+                border-radius: .7rem;
+            
+                
+            }  
+            #btn-inicia-sesion{
+                background-color: $color-strong-Orange;
+            } 
+            #btn-registrate{
+                background-color: $color-Yellow;
+            }
+        }
+    
+}
+
