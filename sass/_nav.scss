@@ -75,6 +75,7 @@ nav {
       }
     }
   }
+
   #btn-inicio-registrar {
     margin-right: 1rem;
     display: flex;
@@ -109,6 +110,32 @@ nav {
       &:hover {
         box-shadow: 0px 0px 20px rgba(34, 35, 58, 0.5);
       }
+    }
+  }
+
+
+  #user-nav-btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #user-circle{
+        img{
+            border-radius:100%;
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+    }
+
+    button{
+        border-color: transparent;
+        background-color: transparent;
+        outline: none;
+    }
+
+    img{
+        margin: .5rem;
+        width: 2rem;
+        height: 2rem;
     }
   }
 }
