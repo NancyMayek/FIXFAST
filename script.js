@@ -31,7 +31,7 @@ function signUpUser(event) {
   };
 
   // Make the API request
-  fetch("http://localhost:8080/fixit/users", {
+  fetch("https://fixfast-backend-production.up.railway.app/fixit/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -78,7 +78,7 @@ function loginUser(event) {
   };
 
   // Make the API request
-  fetch("http://localhost:8080/fixit/auth/login", {
+  fetch("https://fixfast-backend-production.up.railway.app/fixit/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
