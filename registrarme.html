@@ -32,8 +32,18 @@
                    <form action="#">
                         <h1>Crea una cuenta</h1>
                         <div class="social-container">
-                            <a href="#" class="social"><img src="imagenes/facebook.png" alt=""></a>
-                            <a href="#" class="social"><img src="imagenes/google.png" alt=""></a>
+                            <div id="g_id_onload"
+                            data-client_id="254146205454-p6s4ediovpi6a55fid513inakk9ctj7h.apps.googleusercontent.com"
+                            data-callback="handleCredentialResponse">
+                            </div>
+                         <div class="g_id_signin"
+                            data-type="standard"
+                            data-size="large"
+                            data-theme="outline"
+                            data-text="sign_in_with"
+                            data-shape="rectangular"
+                            data-logo_alignment="left">
+                         </div>
                         </div>
                         <span>Tambien puedes usar tu email para registrarte</span>
                         <input type="text" placeholder="Nombre" id="nameInput"/>
@@ -62,5 +72,7 @@
        
     </main>
 </body>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="google_auth.js"></script>
 <script src="script.js"></script>
 </html>
