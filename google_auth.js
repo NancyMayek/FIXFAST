@@ -2,6 +2,7 @@
   function handleCredentialResponse(response) {
      // decodeJwtResponse() is a custom function defined by you
      // to decode the credential response.
+     console.log(response.credential);
      const responsePayload = decodeJwtResponse(response.credential);
 
      console.log("ID: " + responsePayload.sub);
