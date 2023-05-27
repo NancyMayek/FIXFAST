@@ -32,7 +32,7 @@ const direccion = new mapboxgl.Marker({ color: 'black', rotation: 0 })
 
 
 //RECUERDAD QUE LA LONGITUD Y LA LATITUD ESTAN ALREVEZ XD
-fetch("http://localhost:8080/api/usuarios/workers")
+fetch("https://fixfast-backend-production.up.railway.app/api/usuarios/workers")
     .then(response => response.json())
     .then(result => {
       console.log("THIS IS RESITJ",result.usuarios);
@@ -114,7 +114,7 @@ fetch("http://localhost:8080/api/usuarios/workers")
     const uid = localStorage.getItem('uid');
   
     // Make the API request
-    fetch("http://localhost:8080/api/buscar/usuarios/" + uid)
+    fetch("https://fixfast-backend-production.up.railway.app/api/buscar/usuarios/" + uid)
     .then(response => response.json())
     .then(result => {
       console.log(result);

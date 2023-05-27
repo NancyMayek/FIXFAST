@@ -6,7 +6,7 @@ function setUpUserOnLoadPage(event) {
     const uidUser = localStorage.getItem('uid');
   
     // Make the API request
-    fetch("http://localhost:8080/api/buscar/usuarios/" + uidUser)
+    fetch("https://fixfast-backend-production.up.railway.app/api/buscar/usuarios/" + uidUser)
     .then(response => response.json())
     .then(result => {
       console.log(result);
@@ -41,7 +41,7 @@ function setUpUserOnLoadPage(event) {
     // Make the API request
     const uidWorker = localStorage.getItem('uid-worker');
 
-    fetch("http://localhost:8080/api/buscar/usuarios/" + uidWorker)
+    fetch("https://fixfast-backend-production.up.railway.app/api/buscar/usuarios/" + uidWorker)
     .then(response => response.json())
     .then(result => {
       console.log(result);

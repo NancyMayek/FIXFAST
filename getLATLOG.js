@@ -4,7 +4,7 @@ function setUpUserOnLoadPage(event) {
   const uid = localStorage.getItem('uid');
 
   // Make the API request
-  fetch("http://localhost:8080/api/buscar/usuarios/" + uid)
+  fetch("https://fixfast-backend-production.up.railway.app/api/buscar/usuarios/" + uid)
   .then(response => response.json())
   .then(result => {
     console.log(result);

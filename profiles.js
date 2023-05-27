@@ -6,7 +6,7 @@
     const uid = localStorage.getItem('uid');
   
     // Make the API request
-    fetch("http://localhost:8080/api/buscar/usuarios/" + uid)
+    fetch("https://fixfast-backend-production.up.railway.app/api/buscar/usuarios/" + uid)
     .then(response => response.json())
     .then(result => {
       console.log(result);
@@ -66,7 +66,7 @@ fileInput.addEventListener('change', (event) => {
     formData.append('archivo', file);
 
 
-    fetch('http://localhost:8080/api/uploads/usuarios/'+uid, {
+    fetch('https://fixfast-backend-production.up.railway.app/api/uploads/usuarios/'+uid, {
       method: 'PUT',
       body:formData
     })
