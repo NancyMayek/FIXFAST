@@ -10,16 +10,17 @@ signInButton.addEventListener("click", () => {
   container.classList.remove("right-panel-active");
 });
 
+document.getElementById("registro-worker").addEventListener("click", signUpWorker);
+document.getElementById("login-worker").addEventListener("click", loginWorker);
 
-document.getElementById("registro-user").addEventListener("click", signUpUser);
-document.getElementById("login-user").addEventListener("click", loginUser);
-
-function signUpUser(event) {
-  console.log("click registro-user");
+function signUpWorker(event) {
+  console.log("click registro-worker");
   event.preventDefault(); // Prevent form submission
 
   const name = document.getElementById("nameInput").value;
   const email = document.getElementById("correoInput").value;
+  const categoria = document.getElementById("select-categoria").selectedOptions[0].value;
+  console.log(categoria);
   const password = document.getElementById("passwordInput").value;
   const direccion = localStorage.getItem('direccion');
   console.log(direccion);
@@ -32,11 +33,12 @@ function signUpUser(event) {
   const data = {
     nombre: name,
     direccion: direccion,
+    categoria:categoria,
     longitud: longitud,
     latitud:latitud,
     correo: email,
     password: password,
-    rol: "USER_ROLE",
+    rol: "WORKER_ROLE",
 
   };
 
@@ -57,7 +59,7 @@ function signUpUser(event) {
       alert(errorMessage);
     } else {
       // No error, sign-up was successful
-      if (confirm("!USUARIO CREADO CORRECTAMENTE!   ¿QUIERES INICIAR SESION?")) {
+      if (confirm("!BIENVENIDO FIXER!   ¿QUIERES INICIAR SESION?")) {
         window.location.href = 'Inicia-sesion.html';
       } else {
         
@@ -73,7 +75,7 @@ function signUpUser(event) {
   });
 }
 
-function loginUser(event) {
+function loginWorker(event) {
   console.log("click login-user");
   event.preventDefault(); // Prevent form submission
 
@@ -99,14 +101,10 @@ function loginUser(event) {
     // Check if the response indicates an error
     const msg = result.msg;
     const uid = result.usuario.uid;
-    const latitud = result.usuario.latitud;
-    const longitud = result.usuario.longitud;
-    console.log(latitud);
     if (msg) {
       alert(msg);
       if(msg === "Login ok"){
-        localStorage.setItem("dir-lat", latitud);
-        localStorage.setItem("dir-long",longitud);
+
         localStorage.setItem("uid", uid);
         window.location.href = 'index_login.html';
       }
@@ -119,8 +117,3 @@ function loginUser(event) {
     console.error('Error:', error);
   });
 }
-
-
-
-
-

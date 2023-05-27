@@ -13,7 +13,7 @@
 <body>
   <header>
     <nav>
-      <div id="cont-logo">
+      <div id="cont-logo" >
         <a href="index.html"><h1>FIXFAST</h1></a>
       </div>
 
@@ -37,7 +37,7 @@
       </div>
       
       
-      <div id="nav-searchbar">
+      <!-- <div id="nav-searchbar">
         <div id="categorias">
           <div class="dropdown">
             <button
@@ -64,11 +64,11 @@
           /></a>
         </div>
       </div>
-            
+             -->
         <button id="user-nav-btns">
-          <a href="private_profile.html">
+          <a href="private_profile_worker.html">
             <div id="user-circle">
-              <img src="imagenes/no_profile_picture.png" alt="profile_pic">
+              <img id="profilePictureImage-small" src="imagenes/no_profile_picture.png" alt="profile_pic">
             </div>
           </a>
           <div>
@@ -84,49 +84,67 @@
 
 
    <div id="profile-container">
-      <div id="foto-portada">
-        <img src="imagenes/no-background-image.jpg" alt="">
-      </div>
-      <div id="side-nav-profile">
-        <div id="profile-pic">
-          <img src="imagenes/no_profile_picture.png" alt="">
-        </div>
-        <h3 id="name"> Enrique Juarez Perez</h3>
-        <button>
-          <h3>Seguir</h3>
-          <img src="sass/img/Plus.png" alt="">
-        </button>
-        <hr>
-        <div>
-        <a href="">
-            <div id="side-nav-links">
-                <h3>Solicitar servicio</h3>
-                <img src="sass/img/Chevron Left.png" alt="">
+      
+        <div id="foto-portada" >
+          <div class="static-slider10" style=" height: 15rem;  background-image:url(https://images.unsplash.com/photo-1548504773-429e84f586d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80);">
+            <div class="container">
+              <!-- Row  -->
+              <div class="row justify-content-center">
+                <!-- Column -->
+                <div class="col-md-8 align-self-center text-center" style="margin-top: 3.5rem;">
+                  <h1 class="my-3 title text-white" id="nombre-banner">
+                    NOMBRE
+                  </h1>
+                  <h6 class="text-white font-weight-normal op-8" id="descripcion-banner">
+                    ¡Hago trabajos increibles!
+                  </h6>
+                
+                </div>
+                <!-- Column -->
+              </div>
             </div>
-        </a>
-        <hr>
-        <a href="">
-          <div id="side-nav-links">
-              <h3>Reseñas</h3>
-              <img src="sass/img/Chevron Left.png" alt="">
+        </div>
+        </div>
+      <div style="display: flex;">
+        <div id="side-nav-profile">
+          <div id="profile-pic">
+            <img src="imagenes/no_profile_picture.png" id="profilePictureImage-public" alt="">
           </div>
-        </a>
-        <hr>
-      </div>
-      </div>
-      <!-- <div id="Description">
-       <h3>Plomeria Enrique Juarez</h3>
-       <div id="ubicacion">
-        <img src="imagenes/Home Address.png" alt="home" />
-        <a id="ubicacion"><h3> Colonia San Manuel calle Rio Tampico #2589</h3></a>
-        <P>Plomero experto en cambios de lavaderos, destapado de tuberías de baño, resanado de moho y cambio e instalación de tuberías. ¡Confía en nosotros para limpiar y mantener tus tuberías en óptimas condiciones!</P>
-         <div id="calificacion">
-          
-         </div>
-      </div> -->
+          <h3 id="name-profile-public"> </h3>
+          <h5 id="categoria-profile-public"> </h5>
+          <hr>
+          <div>
+          <a href="solicitar_servicio.html">
+              <div id="side-nav-links">
+                  <h3>Solicitar servicio</h3>
+                  <img src="sass/img/Chevron Left.png" alt="">
+              </div>
+          </a>
+        
+          <hr>
+        </div>
+        </div>
+      
+
+      <!-- <div style="margin-left: 5rem; margin-top: 2rem;">
+        <div id="ubicacion" style="display: flex;">
+          <img src="imagenes/Home Address.png" alt="home" />
+          <a id="ubicacion-profile-public"><h3> </h3></a>
+        </div> -->
+        <!-- <div id="reseñas" style="margin-top: 2rem;">
+            <h3 style="font-size: 2rem;">RESEÑAS</h3>
+            <hr>
+            <div id="reseña">
+                <h3 id="reseña-descripcion" style="font-size: 1.4rem;"></h3>
+                <h3 id="nombre-usuario-reseña" style="font-size: 1rem;"></h3>
+                <hr>
+            </div>
+        </div> -->
 
       </div>
+      
 
+      
    </div>
 
 
@@ -141,8 +159,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-    <script src="map.js"></script>
-    <script src="script.js"></script>
+    <script src="profiles_public.js"></script>
+  
     
 
 </body>

@@ -20,24 +20,18 @@ nav #cont-logo h1 {
   font-size: 1.8rem;
   font-family: "Koulen", cursive;
 }
-nav #ubicacion {
-  margin-left: 0.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav #ubicacion img {
-  width: 2.15rem;
-  height: 1.6rem;
-  margin-top: -0.2rem;
-}
-nav #ubicacion a {
-  text-decoration: underline;
-}
-nav #ubicacion h3 {
+nav #ubicacion .btn-secondary {
+  margin-top: 0.4rem;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0%;
+  color: black;
   font-family: "Roboto", sans-serif;
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+nav #ubicacion .btn-secondary img {
+  width: 2.9rem;
+  height: 2rem;
 }
 nav #nav-searchbar {
   display: flex;
@@ -108,8 +102,25 @@ nav #btn-inicio-registrar #btn-Usuario:hover {
 }
 nav #user-nav-btns {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  border-color: transparent;
+  background-color: transparent;
+  margin-left: 1rem;
+}
+nav #user-nav-btns #name-user {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+nav #user-nav-btns #correo-user {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 nav #user-nav-btns #user-circle img {
   border-radius: 100%;
